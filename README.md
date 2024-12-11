@@ -17,7 +17,7 @@ Currently this is configured to easily work with VS Code & the Live Preview exte
 
 ### OPTION B. Package into an existing project
 
-**Example**: https://github.com/nomadicGopher/DirectCMS (/compilers/...)
+**Example**: https://github.com/nomadicGopher/DirectCMS (/compilers/lessToCss.html)
 
 1. Download `lessToCss.html`.
 2. Move `lessToCss.html` from your Download folder to the directory with your LESS file.
