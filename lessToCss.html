@@ -75,8 +75,6 @@
                     <button class="button" id="copy-button">Copy css.min to clipboard</button>
                 </td>
                 <td>
-                    <button class="button" id="copy-path-button">Copy .less directory-path: <br /><span
-                            id="path-preview"></span></button>
                     <button class="button" id="download-button">Download as styles.css.min</button>
                     <br />
                 </td>
@@ -84,9 +82,7 @@
         </table>
     </div>
     <script>
-        // Developer modifiable variables
-        const projectRoot = "C:/Users/jonat/web/less2cssUI"; // Required for directory-path-copy button to show. ie: /home/$USER/less2cssUI
-        const lessFilePath = '/styles.less';
+        const lessFilePath = 'styles.less';
     
         // Function to get trimmed path
         function getTrimmedPath(path) {
@@ -115,20 +111,6 @@
                             // Add event listeners to buttons
                             document.getElementById('copy-button').addEventListener('click', copyCssToClipboard);
                             document.getElementById('download-button').addEventListener('click', downloadCss);
-    
-                            /// Update path preview
-                            const pathPreviewText = projectRoot + lessFilePath;
-                            const trimmedPath = getTrimmedPath(pathPreviewText);
-                            document.getElementById('path-preview').textContent = trimmedPath;
-    
-                            // Show or hide copy path button based on project root
-                            if (projectRoot !== "") {
-                                document.getElementById('copy-path-button').style.display = 'block';
-                                document.getElementById('copy-path-button').addEventListener('click', copyPathToClipboard);
-                            } else {
-                                document.getElementById('copy-path-button').style.display = 'none';
-                                document.getElementById('copy-path-button').removeEventListener('click', copyPathToClipboard);
-                            }
                         }
                     });
                 })
@@ -158,18 +140,7 @@
             a.click();
             URL.revokeObjectURL(url);
         }
-    
-        // Copy path to clipboard
-        function copyPathToClipboard() {
-            const textArea = document.createElement('textarea');
-            textArea.value = document.getElementById('path-preview').textContent;
-            document.body.appendChild(textArea);
-            textArea.select();
-            document.execCommand('copy');
-            document.body.removeChild(textArea);
-            console.log('Copied project path to clipboard');
-        }
-    
+
         // Interpret LESS on page load
         window.onload = interpretLESS;
     </script>    
