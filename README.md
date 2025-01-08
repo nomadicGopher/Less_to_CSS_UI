@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="less2css_sample.png" alt="LESS-to-CSS-SPA" width="50%"/>
+  <img src="less2css_sample.png" alt="less2cssUI" width="50%"/>
 </p>
 
-# LESS-to-CSS-SPA
+# less2cssUI
 
 ## Getting Started
 
