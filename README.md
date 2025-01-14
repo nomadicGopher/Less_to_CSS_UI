@@ -2,10 +2,10 @@
   <img src="less2css_sample.png" alt="less2cssUI" width="50%"/>
 </p>
 
-# less2cssUI
-
 ## Getting Started
 
 * Populate the styles.less file with less code.
+
 or
-* change where he less code can be found by updating `const lessFilePath...` in lessToCss.html (this includes if it is named differently.)
+
+* To change the filename/path of the file being interpreted, update the value stored in `const lessFilePath`.
