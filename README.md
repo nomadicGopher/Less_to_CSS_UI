@@ -10,7 +10,7 @@
 
 ## Instructions without VS Code
 * Clone this repo or download the index.html file
-* Add .less code in styles.less (in the same directory as index.html & save
+* Add .less code in styles.less (in the same directory as index.html) & save
 * Start an HTTP server from the current directory. You can simply use `python -m http.server`
 * Open `localhost:8080` in a web browser
 
