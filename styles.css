@@ -1,0 +1,58 @@
+html {
+  background-color: black;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#css-output {
+  text-align: center;
+  white-space: pre-wrap;
+  padding: 10px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  width: 90%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button-table {
+  width: 100%;
+}
+
+.button-table td {
+  text-align: center;
+}
